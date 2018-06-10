@@ -25,6 +25,15 @@
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <link rel="shortcut icon" type="image/png" href="taiwan.png">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120525415-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120525415-1');
+</script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -210,24 +219,28 @@ $(document).ready(function () {
       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//twlangsurvey.github.io/main/">
         <span class="fa fa-facebook-square"></span>
          
+        Facebook
       </a>
     </li>
     <li>
       <a href="https://plus.google.com/share?url=https%3A//twlangsurvey.github.io/main/">
         <span class="fa fa-google-plus"></span>
          
+        Google Plus
       </a>
     </li>
     <li>
       <a href="https://twitter.com/home?status=https%3A//twlangsurvey.github.io/main/">
         <span class="fa fa-twitter"></span>
          
+        Twitter
       </a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//twlangsurvey.github.io/main/">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//twlangsurvey.github.io/main/&amp;title=&amp;summary=&amp;source=">
         <span class="fa fa-linkedin"></span>
          
+        Linkedin
       </a>
     </li>
   </ul>
@@ -262,7 +275,28 @@ $(document).ready(function () {
 <li>所有<strong>六點量尺題目</strong>(語言能力)的量尺分數由 1-6 轉換成 0-5</li>
 <li><strong>目前居住地</strong>和<strong>成長地(家鄉)</strong>使用 3 碼郵遞區號。對照可見<a href="https://github.com/twLangSurvey/main/tree/master/rscript/data/zipcode_towncode.csv">郵遞區號與鄉鎮市區對照表</a>。</li>
 </ol>
-<p><br><br><br><br><br><br><br><br></p>
+<p><br><br><br><br></p>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'https://twlangsurvey.github.io/' + location.pathname;
+this.language = "zh_TW"; 
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://twlangsurvey.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
             <p style="font-size:10px" class="footertext text-center">&copy; 臺灣語言使用調查 &nbsp;&nbsp; 2018
