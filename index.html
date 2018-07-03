@@ -262,7 +262,7 @@ $(document).ready(function () {
 
 
 <p style="text-align:right; font-size:8px">
-上次更新：2018-07-02
+上次更新：2018-07-03
 </p>
 <div class="section level2">
 <h2>前言</h2>
@@ -289,11 +289,20 @@ $(document).ready(function () {
 </div>
 <div class="section level2">
 <h2>臺灣語言現況</h2>
-<br>
 <div class="row">
 <div class="col-md-7">
-<p><img src="out_graph/animated_facet_map.gif" /><!-- --></p>
-<p><button type="button" class="btn btn-default pull-left btn-xs" data-toggle="modal" data-target="#lang-map">語言地圖</button><div id="lang-map" class="modal fade" role="dialog" tabindex="-1">
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#all-age">整體</a>
+</li>
+<li>
+<a data-toggle="tab" href="#age-group">年齡層</a>
+</li>
+</ul>
+<div class="tab-content">
+<div id="all-age" class="tab-pane fade in active">
+<p><img src="out_graph/facet_static_map.png" width="1750" /></p>
+<p><br> <button type="button" class="btn btn-default pull-left btn-xs" data-toggle="modal" data-target="#lang-map">語言地圖</button><div id="lang-map" class="modal fade" role="dialog" tabindex="-1">
 <div class="modal-dialog " role="document">
 <div class="modal-content">
 <div class="modal-header">
@@ -321,6 +330,42 @@ $(document).ready(function () {
 </div>
 </div> <br></p>
 </div>
+<!--all-age div -->
+<div id="age-group" class="tab-pane fade">
+<p><img src="out_graph/animated_facet_map.gif" /><!-- --></p>
+<p><br> <button type="button" class="btn btn-default pull-left btn-xs" data-toggle="modal" data-target="#lang-map2">語言地圖</button><div id="lang-map2" class="modal fade" role="dialog" tabindex="-1">
+<div class="modal-dialog " role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4 class="modal-title">語言地圖</h4>
+</div>
+<div class="modal-body">
+<p>
+此地圖顯示各語言(華語、閩南語、客家語、英語)在臺灣各地區的<b>通行程度</b>。每一格動畫地圖為一個<b>年齡層(5 歲)</b>，因此可以看見各地區<b>語言通行程度隨時間改變的動態</b>。
+</p>
+<p>
+當懂某語言的人口<b>比例隨年齡變小而下降時</b>，代表該語言為<b>弱勢語言</b>，在當地正逐漸委縮中。
+</p>
+<br>
+
+<p style="font-size:10.5px">
+註 1：這裡<b>懂某語言</b>的定義為：該語言口說能力在六點量尺為 4、5 或 6 分。<br>
+註 2：<b>英語</b>放在這裡並非因其為弱勢語言(雖其使用比例低)，反而是因為其近年相當強勢：由於納入正式教育與全球化現象，臺灣懂英語的人口正在上升。事實上，英語應是目前臺灣最強勢的語言。
+</p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div> <br></p>
+</div>
+<!--age-group div -->
+</div>
+<!-- tab-content div -->
+</div>
+<!--left col  div -->
 <div class="col-md-5">
 <p><br> 我們可以根據問卷資料繪製出<strong>動態語言地圖</strong>，顯示出臺灣<strong>各地</strong><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>，各語言<strong>在不同年齡層之間消長</strong>的情況。</p>
 <p>一地區中，<strong>懂某語言的人口比例</strong>對於該語言在當地的延續有相當的重要性：</p>
@@ -329,7 +374,9 @@ $(document).ready(function () {
 </blockquote>
 <p>臺灣相當符合上述情況。成長於多語社會之中，多數臺灣人會一種以上的語言(如“國語-臺語”、“國語-客語”、“國語-原住民族語-臺語”等)，且<strong>絕大多數的人皆會講華語(國語)</strong>。在此情形下，臺灣的各語言間形成明顯強勢與弱勢的地位。</p>
 </div>
+<!--right col div -->
 </div>
+<!--row div -->
 <hr />
 <div class="section level3">
 <h3>語言金字塔</h3>
