@@ -277,13 +277,13 @@ $(document).ready(function () {
 <p><br></p>
 <div class="row">
 <div class="col-md-6">
-<p><img src="out_graph/sample_spatial_distr.gif" /><!-- --></p>
+<img src="out_graph/sample_spatial_distr.gif" /><!-- -->
 </div>
 <div class="col-md-6">
 <p><br> 在此需提醒讀者注意網站所依據的資料。由於採用<strong>網路問卷</strong>，因此樣本可能過度集中單一地區、身份或年齡層。</p>
 <p>我們提供了兩張圖表顯示<strong>目前收集之資料</strong>的<strong>地理分佈</strong>以及<strong>性別年齡結構</strong>，希望讓讀者了解資料組成的概況。</p>
 <p><br></p>
-<p><img src="index_files/figure-html/unnamed-chunk-3-1.svg" width="672" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-2-2.svg" width="672" /></p>
 </div>
 </div>
 <p><br></p>
@@ -303,39 +303,16 @@ $(document).ready(function () {
 </ul>
 <div class="tab-content">
 <div id="all-age" class="tab-pane fade in active">
-<p><img src="out_graph/facet_static_map.png" width="1750" /></p>
-<p><br> <button type="button" class="btn btn-default pull-left btn-xs" data-toggle="modal" data-target="#lang-map">語言地圖</button><div id="lang-map" class="modal fade" role="dialog" tabindex="-1">
-<div class="modal-dialog " role="document">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
-<h4 class="modal-title">語言地圖</h4>
-</div>
-<div class="modal-body">
-<p>
-此地圖顯示各語言(華語、閩南語、客家語、英語)在臺灣各地區的<b>通行程度</b>。每一格動畫地圖為一個<b>年齡層(5 歲)</b>，因此可以看見各地區<b>語言通行程度隨時間改變的動態</b>。
-</p>
-<p>
-當懂某語言的人口<b>比例隨年齡變小而下降時</b>，代表該語言為<b>弱勢語言</b>，在當地正逐漸委縮中。
-</p>
-<br>
-
-<p style="font-size:10.5px">
-註 1：這裡<b>懂某語言</b>的定義為：該語言口說能力在六點量尺為 4、5 或 6 分。<br>
-註 2：<b>英語</b>放在這裡並非因其為弱勢語言(雖其使用比例低)，反而是因為其近年相當強勢：由於納入正式教育與全球化現象，臺灣懂英語的人口正在上升。事實上，英語應是目前臺灣最強勢的語言。
-</p>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-</div>
-</div>
-</div>
-</div> <br></p>
+<img src="out_graph/facet_static_map.png" /><!-- -->
 </div>
 <!--all-age div -->
 <div id="age-group" class="tab-pane fade">
-<p><img src="out_graph/animated_facet_map.gif" /><!-- --></p>
-<p><br> <button type="button" class="btn btn-default pull-left btn-xs" data-toggle="modal" data-target="#lang-map2">語言地圖</button><div id="lang-map2" class="modal fade" role="dialog" tabindex="-1">
+<img src="out_graph/animated_facet_map.gif" /><!-- -->
+</div>
+<!--age-group div -->
+</div>
+<!-- tabs-content div -->
+<p><button type="button" class="btn btn-default pull-left btn-xs" data-toggle="modal" data-target="#lang-map">語言地圖</button><div id="lang-map" class="modal fade" role="dialog" tabindex="-1">
 <div class="modal-dialog " role="document">
 <div class="modal-content">
 <div class="modal-header">
@@ -362,10 +339,6 @@ $(document).ready(function () {
 </div>
 </div>
 </div> <br></p>
-</div>
-<!--age-group div -->
-</div>
-<!-- tab-content div -->
 </div>
 <!--left col  div -->
 <div class="col-md-5">
@@ -411,7 +384,62 @@ $(document).ready(function () {
 <p><br> 每一格金字塔動畫圖代表著一個<strong>語族</strong><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>各年齡層的語言(口說)能力。若想了解更多關於語言金字塔的資訊，請點選金字塔動畫圖下方之<strong>語言金字塔</strong>按鈕。</p>
 </div>
 <div class="col-md-7">
-<p><img src="out_graph/age_pyramid.gif" /><!-- --></p>
+<ul class="nav nav-tabs">
+<li class="active">
+<a data-toggle="tab" href="#ani-pyramid">動畫</a>
+</li>
+<li>
+<a data-toggle="tab" href="#mand-pyramid">華語</a>
+</li>
+<li>
+<a data-toggle="tab" href="#tw-pyramid">閩南語</a>
+</li>
+<li>
+<a data-toggle="tab" href="#hak-pyramid">客家語</a>
+</li>
+</ul>
+<ul class="nav nav-tabs">
+<li>
+<a data-toggle="tab" href="#ind-pyramid">原住民族語</a>
+</li>
+<li>
+<a data-toggle="tab" href="#sea-pyramid">東南亞語言</a>
+</li>
+<li>
+<a data-toggle="tab" href="#eng-pyramid">英語</a>
+</li>
+</ul>
+<div class="tab-content">
+<div id="ani-pyramid" class="tab-pane fade in active">
+<img src="out_graph/age_pyramid.gif" /><!-- -->
+</div>
+<!--ani-pyramid div -->
+<div id="mand-pyramid" class="tab-pane fade">
+<img src="out_graph/Mand_pyramid.png" /><!-- -->
+</div>
+<!-- mand-pyramid div -->
+<div id="tw-pyramid" class="tab-pane fade">
+<img src="out_graph/Tw_pyramid.png" /><!-- -->
+</div>
+<!-- tw-pyramid div -->
+<div id="hak-pyramid" class="tab-pane fade">
+<img src="out_graph/Hak_pyramid.png" /><!-- -->
+</div>
+<!-- hak-pyramid div -->
+<div id="ind-pyramid" class="tab-pane fade">
+<img src="out_graph/Ind_pyramid.png" /><!-- -->
+</div>
+<!-- ind-pyramid div -->
+<div id="sea-pyramid" class="tab-pane fade">
+<img src="out_graph/SEA_pyramid.png" /><!-- -->
+</div>
+<!-- sea-pyramid div -->
+<div id="eng-pyramid" class="tab-pane fade">
+<img src="out_graph/Eng_pyramid.png" /><!-- -->
+</div>
+<!-- eng-pyramid div -->
+</div>
+<!-- end tabs-content div -->
 <p><button type="button" class="btn btn-default pull-right btn-xs" data-toggle="modal" data-target="#age-pyramid">語言金字塔</button><div id="age-pyramid" class="modal fade" role="dialog" tabindex="-1">
 <div class="modal-dialog " role="document">
 <div class="modal-content">
@@ -439,9 +467,11 @@ $(document).ready(function () {
 </div>
 </div>
 </div>
-</div></p>
+</div> <br></p>
 </div>
+<!-- right-col div -->
 </div>
+<!-- row div -->
 <hr />
 </div>
 </div>
